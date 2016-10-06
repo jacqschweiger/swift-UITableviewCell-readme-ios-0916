@@ -10,7 +10,6 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    let reuseIdentifier = "friendCell"
     var thrillerAlbum: [Song] = []
     
     
@@ -51,7 +50,7 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SongCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath) as! SongCell
         
         cell.backgroundColor = UIColor.gray
 
